@@ -23,6 +23,8 @@
             --gold-secondary: #D4AF37;
             --dark-bg: #e80d27;
             --card-bg: #e80d27;
+            --glass-bg: rgba(0, 0, 0, .25);
+            --glass-border: rgba(0, 0, 0, .35);
             --text-primary: #FFD54F;
             --text-secondary: rgba(255, 215, 0, 0.8);
             --shadow-primary: 0 20px 40px rgba(0, 0, 0, 0.4);
@@ -30,7 +32,12 @@
             --logo-bg-image: url('https://img5.pic.in.th/file/secure-sv1/660f358c-95fb-49f4-b845-9f01a9031c28.png');
             --logo-bg-overlay: rgba(0, 0, 0, 0.35);
             --logo-bg-radius: 24px;
+}
+.btn:hover{
+  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-secondary) 100%) !important;
         }
+body{ opacity:1 !important; transition:none !important; }
+
 .main-title{
   -webkit-text-stroke: 1px rgba(0,0,0,.75);     /* ขอบสำหรับ Chrome/Edge/Safari */
   text-shadow: 0 1px 0 rgba(0,0,0,.6),           /* เผื่อ Firefox */
