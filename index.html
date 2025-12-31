@@ -38,17 +38,6 @@
   text-shadow: 0 1px 0 rgba(0,0,0,.6),           /* เผื่อ Firefox */
                0 0 6px rgba(0,0,0,.25);
 }
-/* FIX: white-looking backgrounds */
-:root{
-  --glass-bg: rgba(0, 0, 0, .25);
-  --glass-border: rgba(0, 0, 0, .35);
-}
-.btn:hover{
-  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-secondary) 100%) !important;
-}
-body{ opacity:1 !important; transition:none !important; } /* กันหน้าขาวแวบแรก */
-
-
         body {
             background-image: url("https://img5.pic.in.th/file/secure-sv1/S2K-VN.jpg") !important;
             background-repeat: no-repeat !important;
@@ -61,6 +50,9 @@ body{ opacity:1 !important; transition:none !important; } /* กันหน้�
             min-height: 100vh;
             overflow-x: hidden;
             position: relative;
+background:
+  radial-gradient(120% 120% at 50% 20%, rgba(0,0,0,.25), rgba(0,0,0,.65)),
+  url('https://img5.pic.in.th/file/secure-sv1/S2K-VN.jpg') center/cover no-repeat;
         }
 
         /* Animated Background */
